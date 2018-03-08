@@ -50,3 +50,12 @@ class Meal{
     })
   }
 }
+
+class Delivery{
+  constructor(name){
+    this.id = ++deliveryId 
+    this.name = name 
+    store.deliveries.push(this)
+  }
+  
+}
