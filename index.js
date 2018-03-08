@@ -20,4 +20,7 @@ class Customer{
       return delivery.customerId === this.id; 
     })
   }
+  totalSpent(){
+    return this.meals().reduce((a,b) => +a + +b.price, 0); 
+  }
 }
