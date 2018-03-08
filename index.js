@@ -1,9 +1,6 @@
 let store = {customers: [], meals: [], deliveries: []}; 
+
 let customerId = 0;
-
-
-
-
 class Customer{
   constructor(name){
     this.id = ++customerId 
