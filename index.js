@@ -75,7 +75,7 @@ class Delivery{
 
 let employerId = 0;
 class Employer {
-  constructor(name){
+  constructor(name) {
     this.id = ++employerId 
     this.name = name 
     store.employers.push(this)
