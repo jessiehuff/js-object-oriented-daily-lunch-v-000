@@ -1,4 +1,4 @@
-let store = {customers: [], meals: [], deliveries: []}; 
+let store = {customers: [], meals: [], deliveries: [], employers: []}; 
 
 let customerId = 0;
 class Customer{
