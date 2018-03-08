@@ -9,4 +9,7 @@ class Customer{
     this.name = name 
     store.customers.push(this)
   }
+  meals(){
+    l
+  }
 }
