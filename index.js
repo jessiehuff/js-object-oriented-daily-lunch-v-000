@@ -72,4 +72,20 @@ class Delivery{
   }
 }
 
+class Employer{
+  constructor(name){
+    this.id = ++employerId 
+    this.name = name 
+    store.employers.push(this)
+  }
+  employees(){
+    return store.customers.filter(customer => {
+      return customer.employerId === this.id 
+    })
+  }
+  deliveries(){
+    return 
+  }
+}
+
 
