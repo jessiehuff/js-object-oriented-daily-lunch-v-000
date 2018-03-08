@@ -10,6 +10,8 @@ class Customer{
     store.customers.push(this)
   }
   meals(){
-    return this.deliveries().map()
+    return this.deliveries().map(delivery => {
+      return delivery.meal();
+    })
   }
 }
