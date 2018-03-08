@@ -91,13 +91,11 @@ class Employer{
   }
   
   meals(){
-    let employerMeals = [] 
-    this.deliveries().forEach(delivery =>{
-      if(!employerMeals.includes(delivery.meal())){
-        employerMeals.push(delivery.meal())
-      }
+    let allMeals = this.deliveries().map(delivery => {
+      return delivery.meal() 
     })
-    return employerMeals
+    let uniqueMeals = Array.from(new Set(allMeals))
+    return [].concat(...uniqueMeals)
   }
   mealTotals(){
     let allMeals = this.deliveries().map(delivery => {
