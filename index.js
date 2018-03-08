@@ -84,13 +84,10 @@ class Employer{
     })
   }
   deliveries(){
-   let newDeliveries = [] 
-   this.employees().forEach(employee =>{
-     employee.deliveries().forEach(delivery =>{
-       newDeliveries.push(delivery)
-     })
-   })
-   return newDeliveries
+   let allDeliveries = this.employees().map(delivery => {
+     return employee.deliveries()
+   }) 
+  return [].concat(...allDeliveries)
   }
   
   meals(){
