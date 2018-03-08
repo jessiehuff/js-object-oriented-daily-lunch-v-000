@@ -10,10 +10,9 @@ class Customer{
     store.customers.push(this)
   }
   meals(){
-    let allMeals = this.deliveries().map(delivery => {
+    return this.deliveries().map(delivery => {
       return delivery.meal();
     })
-    return [].concat(...allMeals);
   }
   deliveries(){
     return store.deliveries.filter(delivery => {
