@@ -52,9 +52,9 @@ class Meal{
 }
 
 class Delivery{
-  constructor(name){
+  constructor(meal, customer){
     this.id = ++deliveryId 
-    this.name = name 
+    this.meal
     store.deliveries.push(this)
   }
   
