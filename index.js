@@ -102,6 +102,19 @@ class Employer{
     })
     return employerMeals
   }
+  mealTotals(){
+    let allMeals = this.deliveries().map(delivery => {
+      return delivery.meal()
+    })
+    let mealTotal = {} 
+    allMeals.forEach(function(meal) {
+      mealTotal[meal.id] = 0
+    })
+    allMeals.forEach(function(meal) {
+      mealTotal[meal.id] += 1 
+    })
+    return mealTotal
+  }
 }
 
 
