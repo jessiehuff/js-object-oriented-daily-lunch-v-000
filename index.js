@@ -104,13 +104,8 @@ class Employer {
       return delivery.meal()
     })
     let mealTotal = {} 
-    Flatmeals.forEach(meal => {
-      mealTotals[meal.id] = 0;
-    });
-    Flatmeals.forEach(meal => {
-      mealTotals[meal.id] += 1;
-    });
-    return mealTotals;
+    
+    return mealTotal
   }
 }
 
