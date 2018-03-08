@@ -83,6 +83,7 @@ class Employer {
       return customer.employerId === this.id 
     })
   }
+  
   deliveries(){
    let allDeliveries = this.employees().map(delivery => {
      return employee.deliveries()
@@ -97,6 +98,7 @@ class Employer {
     let uniqueMeals = Array.from(new Set(allMeals))
     return [].concat(...uniqueMeals)
   }
+  
   mealTotals(){
     let allMeals = this.deliveries().map(delivery => {
       return delivery.meal()
