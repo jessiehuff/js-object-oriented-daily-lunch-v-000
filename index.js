@@ -3,4 +3,10 @@ let customerId = 0;
 let mealId = 0;
 let deliveryId = 0;
 
-class Customer
+class Customer{
+  constructor(name){
+    this.id = ++customerId 
+    this.name = name 
+    store.customers.push(this)
+  }
+}
