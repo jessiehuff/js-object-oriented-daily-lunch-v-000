@@ -92,6 +92,16 @@ class Employer{
    })
    return newDeliveries
   }
+  
+  meals(){
+    let employerMeals = [] 
+    this.deliveries().forEach(delivery =>{
+      if(!employerMeals.includes(delivery.meal())){
+        employerMeals.push(delivery.meal())
+      }
+    })
+    return employerMeals
+  }
 }
 
 
